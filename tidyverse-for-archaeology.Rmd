@@ -1,0 +1,887 @@
+---
+title: "The Tidyverse for Archaeologists"
+subtitle: "A Guide for Beginners"
+author: "Ben Marwick, May 2020"
+output:
+  xaringan::moon_reader:
+    css: "xaringan-themer.css"
+    nature:
+      ratio: "16:9"
+      highlighStyle: solarized-light
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include = F}
+# This is the recommended set up for flipbooks
+# you might think about setting cache to TRUE as you gain practice --- building flipbooks from scratch can be time consuming
+knitr::opts_chunk$set(fig.width = 6, 
+                      message = FALSE, 
+                      warning = FALSE, 
+                      comment = "", 
+                      cache = FALSE, 
+                      fig.retina = 3)
+library(flipbookr)
+library(tidyverse)
+library(fontawesome)
+library(countdown)
+
+# reference on how to do things
+# https://evamaerey.github.io/little_flipbooks_library/flipbookr/skeleton
+# https://arm.rbind.io/slides/xaringan.html
+# images from https://unsplash.com/
+```
+
+class:  center, left
+
+.pull-left[
+<img class="mask" />
+]
+
+
+.pull-right[
+# Find me at...
+.left[
+[`r fa(name = "twitter")` @benmarwick](http://twitter.com/benmarwick)  
+[`r fa(name = "github")` @benmarwick](http://github.com/benmarwick)  
+[`r fa(name = "link")` faculty.washington.edu/bmarwick](http://faculty.washington.edu/bmarwick)  
+[`r fa(name = "paper-plane")` bmarwick@uw.edu](mailto:bmarwick@uw.edu)
+]
+]
+
+---
+
+# Welcome
+
+- The **[tidyverse](https://www.tidyverse.org/)** is an opinionated collection of R packages designed for data science. They are efficient to learn because they share an underlying design philosophy, grammar, and data structures.
+
+--
+
+- Many common tasks of archaeological data analysis can be done **easily** with the tidyverse. 
+
+--
+
+- When we write R code to analyse archaeological data, our analysis is **transparent and reproducible**. These are two vital characteristics of good scientific work. 
+
+--
+
+- We should **share our code and data** with our research publications for others to study and learn
+
+---
+
+# What are we going to do today?
+
+I will demonstrate and you will practice...
+
+--
+
+- Importing and inspecting archaeological data
+
+--
+
+- Five main verbs of the dplyr package to analyse data   
+
+--
+
+- Five main plots of the ggplot2 package to visualise data   
+
+---
+
+class: center, middle 
+
+# Let's import some archaeological data 💽
+
+---
+
+class: left, middle
+
+background-image: url(figures/data-source-paper.png)
+background-size: contain
+
+---
+
+```{r import, echo = FALSE, eval = TRUE, results = 'hide'}
+library(rio) 
+
+# read in the data
+j_data <- import("https://bit.ly/j_data_xlsx", setclass = "tbl_df") 
+
+# take a look
+j_data
+```
+
+`r chunk_reveal("import", break_type = "auto")`
+
+---
+
+class: left, middle
+
+background-image: url(https://images.unsplash.com/photo-1515490480959-ce9152f7ea2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80)
+background-size: cover
+
+---
+
+# Your turn
+
+```{r, code = knitr::knit_code$get("import"), eval = FALSE, echo = TRUE}
+```
+
+`r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
+---
+
+class: center, middle 
+
+# Let's inspect our archaeological data 🔎
+
+---
+
+```{r, inspect1, echo = FALSE, eval = TRUE, results = 'hide'}
+# check the class
+class(j_data)  
+
+# check the size: rows
+nrow(j_data)
+
+# check the size: columns
+ncol(j_data)
+
+# check the column names
+names(j_data)
+```
+
+`r chunk_reveal("inspect1", break_type = "auto")`
+
+---
+
+```{r, inspect2, echo = FALSE, eval = TRUE, results = 'hide'}
+# check the first few rows
+head(j_data)  
+
+# check the structure
+str(j_data)
+```
+
+`r chunk_reveal("inspect2", break_type = "auto")`
+
+---
+
+class: left, middle
+
+background-image: url(https://images.unsplash.com/photo-1494129935429-873eafa78178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2878&q=80)
+background-size: cover
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1507652955-f3dcef5a3be5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+# Your turn
+
+```{r, code = knitr::knit_code$get("inspect1"), eval = FALSE, echo = TRUE}
+```
+
+```{r, code = knitr::knit_code$get("inspect2"), eval = FALSE, echo = TRUE}
+```
+
+`r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
+
+---
+
+class: center, middle 
+
+# Let's analyse our archaeological data with the dplyr & ggplot2 pkgs 🛠️
+
+Just for fun, we will do one main dplyr verb followed by one main type of ggplot. But you can combine and mix up the verbs and plots however you want to. 
+
+Verb         | Plot
+------------- | -------------
+  **select** 🔜 | **histogram** 🔜
+  
+---
+
+background-image: url(https://images.unsplash.com/photo-1540660290370-8aa90e451e8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80)
+background-size: cover
+
+
+---
+
+```{r, dplyr1, echo = FALSE, eval = TRUE, results = 'hide'}
+library(tidyverse)
+# `select` helps us 
+# choose columns 
+j_data %>%  # say 'then'
+  select(Square,
+         Spit, 
+         Weight)
+
+# `select` can use 
+# rules to save time
+j_data %>% # say 'then'
+  select_if(is.numeric)
+```
+
+`r chunk_reveal("dplyr1", break_type = "auto")`
+
+---
+
+class: left, middle
+
+background-image: url(https://images.unsplash.com/photo-1565936795196-4f283b0ae59b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=992&q=80)
+background-size: cover
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1553250135-606ca563bcb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2081&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+`r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
+
+# Your turn
+
+```{r, code = knitr::knit_code$get("dplyr1"), eval = FALSE, echo = TRUE}
+```
+
+
+---
+
+class: center, middle 
+
+# Let's make a histogram <img src="figures/noun_histogram_2312161.png" style="display: inline-block; margin: 0" width="50px" height="50px" />
+
+---
+
+```{r, ggplot1a, echo = FALSE, eval = T, results = 'hide'}
+# we create a new
+# data frame for 
+# plotting
+j_data1 <- j_data %>%  
+  select(Square,
+         Spit, 
+         Material,
+         Weight,
+         Thick)
+
+# take a look 
+j_data1
+```
+
+
+`r chunk_reveal("ggplot1a", break_type = "auto")`
+
+---
+
+```{r, ggplot1b, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data1) + 
+       aes(x = Weight) + 
+  geom_histogram()
+
+```
+
+`r chunk_reveal("ggplot1b", break_type = "auto")`
+
+---
+
+```{r, ggplot1c, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data1) + 
+       aes(x = Weight) + 
+  geom_histogram() + #BREAK
+  scale_x_log10()
+  
+```
+
+`r chunk_reveal("ggplot1c", break_type = "user")`
+
+---
+
+```{r, ggplot1d, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data1) + 
+       aes(x = Weight) + 
+  geom_histogram() + 
+  scale_x_log10() +  #ROTATE
+  scale_x_log10(labels = scales::comma) +  #ROTATE
+  NULL
+  
+```
+
+`r chunk_reveal("ggplot1d", break_type = "rotate", width_code = "60%", width_output = "35%")`
+
+---
+
+```{r, ggplot1e, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data1) + 
+       aes(x = Weight) + 
+  geom_histogram() + 
+  scale_x_log10(labels = scales::comma) +
+  theme_minimal()
+  
+```
+
+`r chunk_reveal("ggplot1e")`
+
+---
+
+```{r, ggplot1f, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data1) + 
+       aes(x = Weight) + 
+  geom_histogram() + 
+  scale_x_log10(labels = scales::comma) +
+  theme_minimal() + #ROTATE
+  theme_minimal(base_size = 20) + #ROTATE
+  NULL
+  
+```
+
+`r chunk_reveal("ggplot1f", break_type = "rotate", width_code = "50%", width_output = "45%")` 
+
+---
+background-image: url(https://images.unsplash.com/photo-1567602612078-2f1504cbe535?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1484100356142-db6ab6244067?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1562&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+# Your turn
+
+```{r,  eval = FALSE, echo = TRUE}
+j_data1 <- j_data %>%  
+  select(Square,
+         Spit, 
+         Material,
+         Weight,
+         Thick)
+```
+
+```{r,  eval = FALSE, echo = TRUE}
+ggplot(data = j_data1) + 
+       aes(x = Weight) + 
+  geom_histogram() + 
+  scale_x_log10(labels = scales::comma) +
+  theme_minimal(base_size = 20) 
+```
+
+`r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
+
+---
+
+class: center, middle 
+
+# What have we done?
+
+Verb         | Plot
+------------- | -------------
+  select ✅ | histogram ✅
+      **filter** 🔜 | **scatterplot** 🔜
+      
+---
+
+```{r, dplyr2, echo = FALSE, eval = TRUE, results = 'hide'}
+# `filter` helps us 
+# choose rows 
+j_data1 %>%  
+  # is equivalent to...
+  filter(Square == "A") %>% 
+  # is less than...
+  filter(Weight < 10) %>% 
+  # is between x and y
+  filter(between(Thick, 0.2, 20)) %>% 
+  # is not NA
+  filter(!is.na(Material))
+```
+
+`r chunk_reveal("dplyr2", break_type = "auto", width_code = "50%", width_output = "45%")`
+
+---
+
+class: center, middle 
+
+# Let's make a scatterplot <img src="figures/noun_Scatter Plot_105485.png" style="display: inline-block; margin: 0" width="50px" height="50px" />
+
+---
+
+```{r, dplyr2a, echo = FALSE, eval = TRUE, results = 'hide'}
+j_data2 <- 
+j_data1 %>%  
+  filter(Square == "A") %>% 
+  filter(Weight < 10) %>% 
+  filter(between(Thick, 0.2, 20)) %>% 
+  filter(!is.na(Material))
+```
+
+
+```{r, ggplot2a, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data2) + 
+       aes(x = Weight,
+           y = Thick) + 
+  geom_point() +
+  scale_x_log10() +
+  scale_y_log10() +
+  theme_bw(base_size = 30) +
+  labs(x = "Mass (g)",
+       y = "Thickness (mm)")
+```
+
+`r chunk_reveal("ggplot2a", break_type = "auto", width_code = "45%", width_output = "50%")`
+
+---
+
+```{r, ggplot2b, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data2) + 
+       aes(x = Weight,
+           y = Thick) + 
+  geom_point() +  #ROTATE
+  geom_point(size = 4) +  #ROTATE
+  geom_point(size = 4, alpha = 0.1) +  #ROTATE
+  scale_x_log10() +
+  scale_y_log10() +
+  theme_bw(base_size = 30) +
+  labs(x = "Mass (g)",
+       y = "Thickness (mm)")
+```
+
+`r chunk_reveal("ggplot2b", break_type = "rotate", width_code = "55%", width_output = "40%")`
+
+---
+```{r, ggplot2c, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data2) + 
+       aes(x = Weight,
+           y = Thick,    
+           colour = Material) +
+  geom_point(size = 4) +  
+  scale_x_log10() +
+  scale_y_log10() +
+  theme_bw(base_size = 10) +
+  labs(x = "Mass (g)",
+       y = "Thickness (mm)") +
+  theme(legend.position = c(0.85, 0.3))
+```
+
+`r chunk_reveal("ggplot2c", break_type = "auto", width_code = "65%", width_output = "30%")`
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1572866511072-44aae0768e85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80)
+background-size: cover
+
+# Your turn
+
+---
+background-image: url(https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+
+# Your turn
+
+```{r, code = knitr::knit_code$get("dplyr2a"), eval = FALSE, echo = TRUE}
+```
+
+```{r, code = knitr::knit_code$get("ggplot2c"), eval = FALSE, echo = TRUE}
+```
+
+`r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
+
+---
+
+class: center, middle
+
+# What have we done?
+
+Verb          | Plot
+------------- | -------------
+  select ✅   |     histogram ✅
+  filter ✅  | scatterplot ✅ 
+  **mutate** 🔜  | **boxplot** 🔜
+  
+---
+
+```{r, dplyr3, echo = FALSE, eval = TRUE, results = 'hide'}
+# `mutate` helps us 
+# change columns 
+j_data %>%  
+  # create a new column
+  mutate(plat_area = Platwid * Platthic) %>% 
+  # update an existing column
+  mutate(Colour =  
+   case_when(Colour == "Dk Grey"   ~ "Dark Grey", 
+             Colour == "Lt Brown"  ~ "Light Brown", 
+             TRUE ~ Colour)) %>% 
+  # update many columns
+  mutate_at(vars(Length, Width), scale) %>% 
+  # update an existing column
+  mutate(Material = fct_lump(Material, 5)) 
+```
+
+`r chunk_reveal("dplyr3", break_type = "auto", width_code = "70%", width_output = "25%", font_size_code = "50%")`
+
+---
+
+class: center, middle 
+
+# Let's make a boxplot <img src="figures/noun_Box Plot_991170.png" style="display: inline-block; margin: 0" width="50px" height="50px" />
+
+---
+
+```{r, dplyr3a, echo = FALSE, eval = TRUE, results = 'hide'}
+j_data2 <- 
+j_data %>%  
+  mutate(plat_area = Platwid * Platthic) %>% 
+  mutate(Material = fct_lump(Material, 5)) 
+```
+
+```{r, ggplot3a, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data2) +
+       aes(x = Material,
+           y = plat_area) +
+  geom_boxplot() +
+  scale_y_log10() +
+  labs(x = "Raw Material",
+       y =  "Platform Area") + 
+  theme_classic(base_size = 12)
+```
+
+`r chunk_reveal("ggplot3a", break_type = "auto", width_code = "60%", width_output = "35%")`
+
+---
+
+```{r, ggplot3b, echo = FALSE, eval = F, results = 'hide'}
+library(ggbeeswarm)
+ggplot(data = j_data2) +
+       aes(x = Material,
+           y = plat_area) +
+  geom_boxplot() +        
+  # overlay data points                  #BREAK2
+  geom_quasirandom(alpha = 0.1) +        #BREAK2
+  scale_y_log10() +
+  labs(x = "Raw Material",
+       y =  "Platform Area") + 
+  theme_classic(base_size = 14) +
+  coord_flip()                         #BREAK3
+```
+
+`r chunk_reveal("ggplot3b", break_type = "non_seq", width_code = "60%", width_output = "35%")`
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1581941274242-25a62bdc9bf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1586084531149-373985a4478e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+# Your turn
+
+```{r, code = knitr::knit_code$get("dplyr3a"), eval = FALSE, echo = TRUE}
+```
+
+```{r, code = knitr::knit_code$get("ggplot3a"), eval = FALSE, echo = TRUE}
+```
+
+`r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
+
+---
+
+class: center, middle
+
+# What have we done?
+
+Verb          | Plot
+------------- | -------------
+  select ✅    |     histogram ✅
+  filter ✅    |     scatterplot ✅ 
+  mutate ✅    |     boxplot  ✅   
+  **group by** 🔜  |      **barplot** 🔜
+
+
+---
+```{r, dplyr4, echo = FALSE, eval = TRUE, results = 'hide'}
+
+
+j_data2 %>%                   
+  group_by(Material) %>%      
+  tally() %>%                 
+  arrange(desc(n))            
+  
+```
+
+`r chunk_reveal("dplyr4", break_type = "auto", width_code = "70%", width_output = "25%", font_size_code = "50%")`
+
+---
+
+class: center, middle 
+
+# Let's make a barplot <img src="figures/noun_bar graph_1393295.png" style="display: inline-block; margin: 0" width="50px" height="50px" />
+
+---
+
+```{r, dplyr4s, echo = FALSE, eval = TRUE, results = 'hide'}
+
+j_data3 <- 
+j_data2 %>%                   
+  group_by(Material) %>%      
+  tally() %>%                 
+  arrange(desc(n)) %>% 
+  drop_na()
+  
+```
+
+```{r, ggplot4, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data3) +
+       aes(x = Material,
+           y = n) +
+  geom_col() +        
+  scale_y_log10() +
+  labs(x = "Raw Material",
+       y =  "Frequency") + 
+  theme_minimal(base_size = 14) 
+```
+
+`r chunk_reveal("ggplot4", break_type = "auto", width_code = "55%", width_output = "40%")`
+
+---
+
+```{r, ggplot4a, echo = FALSE, eval = F, results = 'hide'}
+
+ggplot(data = j_data3) +
+       aes(x = Material,               #ROTATE
+       aes(x = reorder(Material, n),   #ROTATE
+           y = n) +                     
+  geom_col() +        
+  scale_y_log10() +
+  labs(x = "Raw Material",
+       y =  "Frequency") + 
+  theme_minimal(base_size = 14) 
+```
+
+`r chunk_reveal("ggplot4a", break_type = "rotate", width_code = "55%", width_output = "40%")`
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1556484658-6789c325bedf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+
+# Your turn
+
+```{r, code = knitr::knit_code$get("dplyr4s"), eval = FALSE, echo = TRUE}
+```
+
+```{r, code = knitr::knit_code$get("ggplot4"), eval = FALSE, echo = TRUE}
+```
+
+`r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
+
+---
+
+class: center, middle
+
+# What have we done?
+
+Verb          | Plot
+------------- | -------------
+  select ✅    |     histogram ✅
+  filter ✅    |     scatterplot ✅ 
+  mutate ✅    |     boxplot  ✅   
+  group by ✅  |      barplot   ✅     
+  summarise 🔜  |    facet 🔜 
+
+---
+
+```{r, dplyr5, echo = FALSE, eval = TRUE, results = 'hide'}
+
+j_data2 %>%                   
+  group_by(Material) %>%      
+  summarise(length_mean = mean(Length),  
+            length_sd =   sd(Length)) 
+  
+```
+
+`r chunk_reveal("dplyr5", break_type = "auto", width_code = "65%", width_output = "25%")`
+
+---
+
+```{r, dplyr5a, echo = FALSE, eval = TRUE, results = 'hide'}
+
+j_data2 %>%                   
+  group_by(Material) %>%   
+    summarise(length_mean = mean(Length, na.rm = TRUE),        
+              length_sd =     sd(Length, na.rm = TRUE)) %>%    
+  drop_na()      
+  
+```
+
+`r chunk_reveal("dplyr5a", break_type = "auto", width_code = "70%", width_output = "25%")`
+
+---
+
+```{r, dplyr5b, echo = FALSE, eval = TRUE, results = 'hide'}
+
+j_data2 %>%                   
+  group_by(Material) %>%   
+    summarise(length_mean = mean(Length, na.rm = TRUE),   
+              length_sd =     sd(Length, na.rm = TRUE)) %>% 
+  drop_na() %>% 
+  mutate_if(is.numeric, round, 2) %>%   
+  knitr::kable('html')                  
+
+```
+
+`r chunk_reveal("dplyr5b", break_type = "auto", width_code = "50%", width_output = "45%")`
+
+---
+
+class: center, middle 
+
+# Let's make a facetted plot <img src="figures/noun_grid_2202247.png" style="display: inline-block; margin: 0" width="50px" height="50px" />
+
+---
+
+
+```{r, ggplot5, echo = FALSE, eval = F, results = 'hide'}
+
+j_data2 %>% 
+  drop_na(Material) %>% 
+ggplot() +
+  aes(x = Length) +
+  geom_histogram() +        
+  facet_wrap( ~ Material) +  
+  labs(x =  "Length (mm)",
+       y =  "Frequency") + 
+  theme_minimal(base_size = 12) 
+```
+
+`r chunk_reveal("ggplot5", break_type = "auto", width_code = "55%", width_output = "40%")`
+
+---
+
+```{r, ggplot5a, echo = FALSE, eval = F, results = 'hide'}
+
+j_data2 %>% 
+  drop_na(Material) %>% 
+ggplot() +
+  aes(x = Length) +
+  geom_histogram() +        
+  facet_wrap( ~ Material) +  #ROTATE
+  facet_wrap( ~ Material, scales = "free_y" ) +  #ROTATE
+  labs(x =  "Length (mm)",
+       y =  "Frequency") + 
+  theme_minimal(base_size = 12) 
+```
+
+`r chunk_reveal("ggplot5a", break_type = "rotate", width_code = "75%", width_output = "20%")`
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1565014237362-c52e04dcf6ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1533561797500-4fad4750814e?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80)
+background-size: cover
+
+# Your turn
+
+---
+
+
+# Your turn
+
+```{r, ggplot5b, echo = FALSE, eval = F, results = 'hide'}
+
+j_data2 %>% 
+  drop_na(Material) %>% 
+ggplot() +
+  aes(x = Length) +
+  geom_histogram() +        
+  facet_wrap( ~ Material, scales = "free_y" ) + 
+  labs(x =  "Length (mm)",
+       y =  "Frequency") + 
+  theme_minimal(base_size = 12) 
+```
+
+```{r, code = knitr::knit_code$get("dplyr5a"), eval = FALSE, echo = TRUE}
+```
+
+```{r, code = knitr::knit_code$get("ggplot5b"), eval = FALSE, echo = TRUE}
+```
+
+`r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
+
+---
+
+class: center, middle
+
+# What have we done?
+
+Verb          | Plot
+------------- | -------------
+  select ✅    |     histogram ✅
+  filter ✅    |     scatterplot ✅ 
+  mutate ✅    |     boxplot  ✅   
+  group by ✅  |      barplot   ✅     
+  summarise ✅   |    facet ✅ 
+
+---
+
+background-image: url(figures/end.gif)
+background-size: cover
+
+
+---
+
+class: inverse, middle, center
+
+The flipbooked portion of this presentation was created with the new {flipbookr} package.  Get it with `remotes::install_github("EvaMaeRey/flipbookr")`
+
+---
+
