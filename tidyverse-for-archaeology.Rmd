@@ -508,6 +508,17 @@ background-size: cover
 `r countdown(minutes = 5, color_running_background  = "lightgreen", color_running_text = "black", color_finished_background = "red", color_finished_text =  "grey30")`
 
 ---
+background-image: url(https://images.unsplash.com/photo-1524901548305-08eeddc35080?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
+background-size: cover
+
+# Let's take a short break
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1533745848184-3db07256e163?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80)
+background-size: cover
+
+---
 
 class: center, middle
 

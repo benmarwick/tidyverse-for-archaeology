@@ -147,26 +147,26 @@ j_data &lt;- import("https://bit.ly/j_data_xlsx", setclass = "tbl_df")
 
 ```
 # A tibble: 9,752 x 48
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 36 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 37 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;
 ```
 ]
 
@@ -209,7 +209,7 @@ j_data &lt;- import("https://bit.ly/j_data_xlsx", setclass = "tbl_df")
 j_data
 ```
 
-<div class="countdown" id="timer_5ed129c1" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ed1a4ef" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 ---
@@ -339,14 +339,16 @@ ncol(j_data)
 ```
 
 ```
- [1] "Site"       "Square"     "Spit"       "Group"      "Artno"      "Material"  
- [7] "Colour"     "Weight"     "Length"     "Artclas"    "Cortex"     "Cortype"   
-[13] "Initiat"    "Breaks"     "Noseg"      "Platwid"    "Plat"       "Focal"     
-[19] "Overhang"   "NoDS"       "NoPS"       "Rtch"       "Plat_2"     "Focal_2"   
-[25] "Overhang_2" "NoDS_2"     "NoPS_2"     "Rtch_2"     "RetOri"     "Retype"    
-[31] "Retloc"     "Retlen"     "Retdep"     "Portion"    "Heat"       "EdgeDam"   
-[37] "Weathering" "Corerot"    "RetScNo"    "Term"       "Janus"      "Recycled"  
-[43] "Redirect"   "Width"      "Thick"      "Platthic"   "area"       "elongation"
+ [1] "Site"       "Square"     "Spit"       "Group"      "Artno"     
+ [6] "Material"   "Colour"     "Weight"     "Length"     "Artclas"   
+[11] "Cortex"     "Cortype"    "Initiat"    "Breaks"     "Noseg"     
+[16] "Platwid"    "Plat"       "Focal"      "Overhang"   "NoDS"      
+[21] "NoPS"       "Rtch"       "Plat_2"     "Focal_2"    "Overhang_2"
+[26] "NoDS_2"     "NoPS_2"     "Rtch_2"     "RetOri"     "Retype"    
+[31] "Retloc"     "Retlen"     "Retdep"     "Portion"    "Heat"      
+[36] "EdgeDam"    "Weathering" "Corerot"    "RetScNo"    "Term"      
+[41] "Janus"      "Recycled"   "Redirect"   "Width"      "Thick"     
+[46] "Platthic"   "area"       "elongation"
 ```
 ]
 
@@ -387,20 +389,21 @@ count: false
 
 ```
 # A tibble: 6 x 48
-  Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-  &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
-1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
-2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
-3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
-4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
-5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
-6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
-# … with 36 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;,
-#   Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;,
-#   Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;,
-#   Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
-#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
-#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;, Width &lt;dbl&gt;,
+  Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+  &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+# … with 37 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
+#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;,
+#   NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;,
+#   Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;,
+#   Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;, Portion &lt;chr&gt;,
+#   Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;,
+#   Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;, Width &lt;dbl&gt;,
 #   Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;
 ```
 ]
@@ -425,20 +428,21 @@ head(j_data)
 
 ```
 # A tibble: 6 x 48
-  Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-  &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
-1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
-2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
-3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
-4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
-5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
-6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
-# … with 36 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;,
-#   Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;,
-#   Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;,
-#   Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
-#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
-#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;, Width &lt;dbl&gt;,
+  Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+  &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+# … with 37 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
+#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;,
+#   NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;,
+#   Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;,
+#   Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;, Portion &lt;chr&gt;,
+#   Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;,
+#   Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;, Width &lt;dbl&gt;,
 #   Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;
 ```
 
@@ -554,7 +558,7 @@ head(j_data)
 str(j_data)
 ```
 
-<div class="countdown" id="timer_5ed129d2" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ed1a6c7" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -614,26 +618,26 @@ library(tidyverse)
 
 ```
 # A tibble: 9,752 x 48
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 36 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 37 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;
 ```
 ]
 
@@ -718,26 +722,26 @@ j_data %&gt;%  # say 'then'
 
 ```
 # A tibble: 9,752 x 48
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 36 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 37 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;
 ```
 ]
 
@@ -785,21 +789,22 @@ j_data %&gt;%  # say 'then'
 
 ```
 # A tibble: 9,752 x 24
-    Spit Group Artno Weight Length Cortex Noseg Platwid  NoDS  NoPS NoDS_2 NoPS_2 Retlen
-   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;
- 1     1     1     1  1.83   22.0       0    NA   20.3      5     2      5      2  NA   
- 2     1     1     2  0.61   14.6       0     3   11.0      5     3      5      3  10.8 
- 3     1     1     3  3.81   29.6       0    NA   NA       10    NA     10     NA  NA   
- 4     1     1     4  0.13    5.83      0     1   NA        2    NA      2     NA   2.05
- 5     1     1     5  0.05    7.07      0    NA    6.05     3     2      3      2  NA   
- 6     1     1     6  0.580  11.1      NA    NA   NA       11    NA     11     NA  NA   
- 7     1     1     7  0.03    5.72      0    NA    2.91     3     1      3      1  NA   
- 8     1     1     8  0.02    8.37      0    NA   NA        1    NA      1     NA  NA   
- 9     1     1     9  0.21   10.7       0    NA   NA        3    NA      3     NA  NA   
-10     1     1    10  0.25   14.3       0    NA    3.78     5     1      5      1  NA   
-# … with 9,742 more rows, and 11 more variables: Retdep &lt;dbl&gt;, Heat &lt;dbl&gt;,
-#   EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Width &lt;dbl&gt;,
-#   Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;
+    Spit Group Artno Weight Length Cortex Noseg Platwid  NoDS  NoPS NoDS_2
+   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;
+ 1     1     1     1  1.83   22.0       0    NA   20.3      5     2      5
+ 2     1     1     2  0.61   14.6       0     3   11.0      5     3      5
+ 3     1     1     3  3.81   29.6       0    NA   NA       10    NA     10
+ 4     1     1     4  0.13    5.83      0     1   NA        2    NA      2
+ 5     1     1     5  0.05    7.07      0    NA    6.05     3     2      3
+ 6     1     1     6  0.580  11.1      NA    NA   NA       11    NA     11
+ 7     1     1     7  0.03    5.72      0    NA    2.91     3     1      3
+ 8     1     1     8  0.02    8.37      0    NA   NA        1    NA      1
+ 9     1     1     9  0.21   10.7       0    NA   NA        3    NA      3
+10     1     1    10  0.25   14.3       0    NA    3.78     5     1      5
+# … with 9,742 more rows, and 13 more variables: NoPS_2 &lt;dbl&gt;, Retlen &lt;dbl&gt;,
+#   Retdep &lt;dbl&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
+#   elongation &lt;dbl&gt;
 ```
 ]
 
@@ -836,7 +841,7 @@ background-size: cover
 
 ---
 
-<div class="countdown" id="timer_5ed128ee" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ed1a604" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -1406,7 +1411,7 @@ ggplot(data = j_data1) +
   theme_minimal(base_size = 20) 
 ```
 
-<div class="countdown" id="timer_5ed1274c" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ed1a715" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -2126,9 +2131,20 @@ ggplot(data = j_data2) +
   theme(legend.position = c(0.85, 0.3))
 ```
 
-<div class="countdown" id="timer_5ed129f7" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ed1a6f4" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
+
+---
+background-image: url(https://images.unsplash.com/photo-1524901548305-08eeddc35080?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80)
+background-size: cover
+
+# Let's take a short break
+
+---
+
+background-image: url(https://images.unsplash.com/photo-1533745848184-3db07256e163?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2689&amp;q=80)
+background-size: cover
 
 ---
 
@@ -2163,26 +2179,26 @@ count: false
 
 ```
 # A tibble: 9,752 x 48
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 36 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 37 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;
 ```
 ]
 
@@ -2206,26 +2222,27 @@ j_data %&gt;%
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -2254,26 +2271,27 @@ j_data %&gt;%
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dark …  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Light…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dark …  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Light…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -2304,26 +2322,27 @@ j_data %&gt;%
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length[,1] Artclas Cortex
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
- 1 J     B          1     1     1 Chert    Brown   1.83      1.80   Flake        0
- 2 J     B          1     1     2 Chert    Yellow  0.61      0.629  RetF         0
- 3 J     B          1     1     3 Chert    Dark …  3.81      3.00   Core         0
- 4 J     B          1     1     4 Chert    Grey    0.13     -0.755  RetFrag      0
- 5 J     B          1     1     5 Chert    Grey    0.05     -0.559  Flake        0
- 6 J     B          1     1     6 Chert    Light…  0.580     0.0821 Core        NA
- 7 J     B          1     1     7 Chert    Dk Br…  0.03     -0.772  Flake        0
- 8 J     B          1     1     8 Chert    Cream   0.02     -0.354  FFrag        0
- 9 J     B          1     1     9 Chert    Grey    0.21      0.0142 Flake-b      0
-10 J     B          1     1    10 Chert    Grey    0.25      0.578  Flake        0
-# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
-#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;,
-#   NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;,
-#   NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;,
-#   Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;,
-#   Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;,
-#   Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;, Width[,1] &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;,
-#   area &lt;dbl&gt;, elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length[,1] Artclas
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;  
+ 1 J     B          1     1     1 Chert    Brown   1.83      1.80   Flake  
+ 2 J     B          1     1     2 Chert    Yellow  0.61      0.629  RetF   
+ 3 J     B          1     1     3 Chert    Dark …  3.81      3.00   Core   
+ 4 J     B          1     1     4 Chert    Grey    0.13     -0.755  RetFrag
+ 5 J     B          1     1     5 Chert    Grey    0.05     -0.559  Flake  
+ 6 J     B          1     1     6 Chert    Light…  0.580     0.0821 Core   
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03     -0.772  Flake  
+ 8 J     B          1     1     8 Chert    Cream   0.02     -0.354  FFrag  
+ 9 J     B          1     1     9 Chert    Grey    0.21      0.0142 Flake-b
+10 J     B          1     1    10 Chert    Grey    0.25      0.578  Flake  
+# … with 9,742 more rows, and 39 more variables: Cortex &lt;dbl&gt;, Cortype &lt;chr&gt;,
+#   Initiat &lt;chr&gt;, Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;,
+#   Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;,
+#   Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;,
+#   Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
+#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
+#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
+#   Redirect &lt;lgl&gt;, Width[,1] &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
+#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -2356,26 +2375,27 @@ j_data %&gt;%
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length[,1] Artclas Cortex
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
- 1 J     B          1     1     1 Chert    Brown   1.83      1.80   Flake        0
- 2 J     B          1     1     2 Chert    Yellow  0.61      0.629  RetF         0
- 3 J     B          1     1     3 Chert    Dark …  3.81      3.00   Core         0
- 4 J     B          1     1     4 Chert    Grey    0.13     -0.755  RetFrag      0
- 5 J     B          1     1     5 Chert    Grey    0.05     -0.559  Flake        0
- 6 J     B          1     1     6 Chert    Light…  0.580     0.0821 Core        NA
- 7 J     B          1     1     7 Chert    Dk Br…  0.03     -0.772  Flake        0
- 8 J     B          1     1     8 Chert    Cream   0.02     -0.354  FFrag        0
- 9 J     B          1     1     9 Chert    Grey    0.21      0.0142 Flake-b      0
-10 J     B          1     1    10 Chert    Grey    0.25      0.578  Flake        0
-# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
-#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;,
-#   NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;,
-#   NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;,
-#   Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;,
-#   Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;,
-#   Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;, Width[,1] &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;,
-#   area &lt;dbl&gt;, elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length[,1] Artclas
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;      &lt;dbl&gt; &lt;chr&gt;  
+ 1 J     B          1     1     1 Chert    Brown   1.83      1.80   Flake  
+ 2 J     B          1     1     2 Chert    Yellow  0.61      0.629  RetF   
+ 3 J     B          1     1     3 Chert    Dark …  3.81      3.00   Core   
+ 4 J     B          1     1     4 Chert    Grey    0.13     -0.755  RetFrag
+ 5 J     B          1     1     5 Chert    Grey    0.05     -0.559  Flake  
+ 6 J     B          1     1     6 Chert    Light…  0.580     0.0821 Core   
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03     -0.772  Flake  
+ 8 J     B          1     1     8 Chert    Cream   0.02     -0.354  FFrag  
+ 9 J     B          1     1     9 Chert    Grey    0.21      0.0142 Flake-b
+10 J     B          1     1    10 Chert    Grey    0.25      0.578  Flake  
+# … with 9,742 more rows, and 39 more variables: Cortex &lt;dbl&gt;, Cortype &lt;chr&gt;,
+#   Initiat &lt;chr&gt;, Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;,
+#   Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;,
+#   Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;,
+#   Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
+#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
+#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
+#   Redirect &lt;lgl&gt;, Width[,1] &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
+#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -2677,7 +2697,7 @@ ggplot(data = j_data2) +
   theme_classic(base_size = 12)
 ```
 
-<div class="countdown" id="timer_5ed126f4" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ed1a7a4" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -2713,26 +2733,27 @@ count: false
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -2754,26 +2775,27 @@ j_data2 %&gt;%
 ```
 # A tibble: 9,752 x 49
 # Groups:   Material [8]
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -3142,7 +3164,7 @@ ggplot(data = j_data3) +
   theme_minimal(base_size = 14) 
 ```
 
-<div class="countdown" id="timer_5ed127c3" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ed1a523" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -3179,26 +3201,27 @@ count: false
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -3220,26 +3243,27 @@ j_data2 %&gt;%
 ```
 # A tibble: 9,752 x 49
 # Groups:   Material [8]
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -3343,26 +3367,27 @@ count: false
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -3384,26 +3409,27 @@ j_data2 %&gt;%
 ```
 # A tibble: 9,752 x 49
 # Groups:   Material [8]
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -3539,26 +3565,27 @@ count: false
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -3580,26 +3607,27 @@ j_data2 %&gt;%
 ```
 # A tibble: 9,752 x 49
 # Groups:   Material [8]
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -3877,26 +3905,27 @@ count: false
 
 ```
 # A tibble: 9,752 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,742 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,742 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -3917,26 +3946,27 @@ j_data2 %&gt;%
 
 ```
 # A tibble: 9,742 x 49
-   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex Cortype
-   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;  
- 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0 &lt;NA&gt;   
- 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0 &lt;NA&gt;   
- 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0 &lt;NA&gt;   
- 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0 &lt;NA&gt;   
- 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0 &lt;NA&gt;   
- 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA &lt;NA&gt;   
- 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0 &lt;NA&gt;   
- 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0 &lt;NA&gt;   
- 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0 &lt;NA&gt;   
-10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0 &lt;NA&gt;   
-# … with 9,732 more rows, and 37 more variables: Initiat &lt;chr&gt;, Breaks &lt;chr&gt;,
-#   Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;, Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;,
-#   NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;, Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;,
-#   NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;, RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;,
-#   Retdep &lt;dbl&gt;, Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;,
-#   Corerot &lt;dbl&gt;, RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;,
-#   Redirect &lt;lgl&gt;, Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;,
-#   elongation &lt;dbl&gt;, plat_area &lt;dbl&gt;
+   Site  Square  Spit Group Artno Material Colour Weight Length Artclas Cortex
+   &lt;chr&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;fct&gt;    &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;
+ 1 J     B          1     1     1 Chert    Brown   1.83   22.0  Flake        0
+ 2 J     B          1     1     2 Chert    Yellow  0.61   14.6  RetF         0
+ 3 J     B          1     1     3 Chert    Dk Gr…  3.81   29.6  Core         0
+ 4 J     B          1     1     4 Chert    Grey    0.13    5.83 RetFrag      0
+ 5 J     B          1     1     5 Chert    Grey    0.05    7.07 Flake        0
+ 6 J     B          1     1     6 Chert    Lt Br…  0.580  11.1  Core        NA
+ 7 J     B          1     1     7 Chert    Dk Br…  0.03    5.72 Flake        0
+ 8 J     B          1     1     8 Chert    Cream   0.02    8.37 FFrag        0
+ 9 J     B          1     1     9 Chert    Grey    0.21   10.7  Flake-b      0
+10 J     B          1     1    10 Chert    Grey    0.25   14.3  Flake        0
+# … with 9,732 more rows, and 38 more variables: Cortype &lt;chr&gt;, Initiat &lt;chr&gt;,
+#   Breaks &lt;chr&gt;, Noseg &lt;dbl&gt;, Platwid &lt;dbl&gt;, Plat &lt;chr&gt;, Focal &lt;lgl&gt;,
+#   Overhang &lt;chr&gt;, NoDS &lt;dbl&gt;, NoPS &lt;dbl&gt;, Rtch &lt;chr&gt;, Plat_2 &lt;chr&gt;,
+#   Focal_2 &lt;lgl&gt;, Overhang_2 &lt;chr&gt;, NoDS_2 &lt;dbl&gt;, NoPS_2 &lt;dbl&gt;, Rtch_2 &lt;chr&gt;,
+#   RetOri &lt;chr&gt;, Retype &lt;chr&gt;, Retloc &lt;chr&gt;, Retlen &lt;dbl&gt;, Retdep &lt;dbl&gt;,
+#   Portion &lt;chr&gt;, Heat &lt;dbl&gt;, EdgeDam &lt;dbl&gt;, Weathering &lt;dbl&gt;, Corerot &lt;dbl&gt;,
+#   RetScNo &lt;dbl&gt;, Term &lt;chr&gt;, Janus &lt;lgl&gt;, Recycled &lt;lgl&gt;, Redirect &lt;lgl&gt;,
+#   Width &lt;dbl&gt;, Thick &lt;dbl&gt;, Platthic &lt;dbl&gt;, area &lt;dbl&gt;, elongation &lt;dbl&gt;,
+#   plat_area &lt;dbl&gt;
 ```
 ]
 
@@ -4193,7 +4223,7 @@ ggplot() +
   theme_minimal(base_size = 12) 
 ```
 
-<div class="countdown" id="timer_5ed12869" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_5ed1a73e" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
