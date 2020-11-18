@@ -1,7 +1,7 @@
 ---
 title: "The Tidyverse for Archaeologists"
 subtitle: "A Guide for Beginners"
-author: "Ben Marwick, May 2020"
+author: "Ben Marwick, November 2020"
 output:
   xaringan::moon_reader:
     css: "xaringan-themer.css"
@@ -65,7 +65,7 @@ class:  center, left
 
 --
 
-- We should **share our code and data** with our research publications for others to study and learn
+- We should [**share our code and data**](https://github.com/benmarwick/ctv-archaeology/blob/master/README.md) with our research publications for others to study and learn
 
 ---
 
